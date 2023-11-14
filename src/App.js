@@ -1,23 +1,34 @@
-import logo from './logo.svg';
+import React, { useState } from 'react'
 import './App.css';
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import LoginPage from './LoginPage'
+import BirthdayPage from './BirthdayPage';
+import Signup from './Signup'
 
 function App() {
+  const [birthdate, setBirthdate] = useState('')
+  const [name, setName] = useState('')
+
+
+  const getDob =(dob) => {
+    setBirthdate(dob)
+  }
+
+  const updateName = (name) => {
+    setName(name)
+  }
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      
+{/* <Router> */}
+  <Routes>
+    <Route path='/login' element={<LoginPage onUpdateName={updateName} onUpdateDob={getDob}/> } />
+    <Route path='/signup' element={<Signup/>} />
+    <Route path='/birthday' element={<BirthdayPage  name={name} birthdate={birthdate}/>} />
+    <Route path='/' element={<LoginPage/>} />  
+  </Routes>
+{/* </Router> */}
+
     </div>
   );
 }

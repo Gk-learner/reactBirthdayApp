@@ -1,0 +1,65 @@
+.my-btn-color{
+    color:white;
+ }
+ .warning {
+    border: 2px solid red;
+}
+p{
+    color:red;
+    /* display: none; */
+}
+.form-label{
+    margin-top:7px;
+}
+#userName{
+    font-weight: bold;
+    text-align: center;
+    font-size: x-large;
+    background-color: darkslategrey;
+    color: white;
+
+}
+#userName2{
+    font-weight: bold;
+    text-align: center;
+    font-size: x-large;
+    background-color: darkslategrey;
+    color: white;
+
+}
+#userName3{
+    font-weight: bold;
+    text-align: center;
+    font-size: x-large;
+    background-color: darkslategrey;
+    color: white;
+
+}
+
+#userName p{
+    font-size:medium
+}
+form p{
+    display: none
+}
+#newclass4{
+    background-color: purple;
+    color: antiquewhite;
+    font-size: 40px;
+    justify-content: center;
+}
+#newclass2{
+    background-color: purple;
+    color: antiquewhite;
+    font-size: 40px;
+    justify-content: center;
+}
+#newclass3{
+    background-color: purple;
+    color: antiquewhite;
+    font-size: 40px;
+    justify-content: center;
+}
+.container{
+    max-width: 40%;
+}
