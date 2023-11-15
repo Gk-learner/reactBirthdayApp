@@ -1,7 +1,7 @@
 import React  from "react";
 import './inputField.css'
 
-const InputField = ({ value, name, placeholder, autoComplete, type, onChange }) => (
+const InputField = ({ value, name, placeholder, type, onChange }) => (
   <div className="form-group">
     <input
       type={type}

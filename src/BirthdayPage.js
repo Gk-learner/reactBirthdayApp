@@ -84,7 +84,7 @@ const BirthdayPage = (props) => {
             <div className="Container" id="newclass">
             </div>
             {response ?  <div className="Container" id="newclass2">
-            <div id="newclass3"> {response} DAYS More Until your Birthday!</div>
+            <div id="newclass3"> {response} DAYS more Until your Birthday!</div>
             </div> : ''}
           
             <div className="Container" id="newclass3">

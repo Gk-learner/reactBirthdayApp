@@ -63,7 +63,7 @@ const LoginPage = (props) => {
                               placeholder="example@email.com"
                               ></InputField>
                     </div>
-                    <p className="text-left">Please input the correct format of email!</p>
+                    <p className="text-left">Please input the correct format of email!!</p>
 
                     <div className="mb-3 d-flex justify-content-around">
                         <label htmlFor="Password" className="form-label text-left">Password:</label>
