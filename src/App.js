@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import './App.css';
-import { BrowserRouter as Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import LoginPage from './LoginPage'
 import BirthdayPage from './BirthdayPage';
 import Signup from './Signup'
@@ -19,14 +19,14 @@ function App() {
   }
   return (
     <div className="App">
-      
-  <Routes>
-    <Route path='/login' element={<LoginPage onUpdateName={updateName} onUpdateDob={getDob}/> } />
-    <Route path='/signup' element={<Signup/>} />
-    <Route path='/birthday' element={<BirthdayPage  name={name} birthdate={birthdate}/>} />
-    <Route path='/' element={<LoginPage/>} />  
-  </Routes>
-
+      <BrowserRouter>        
+        <Routes>
+          <Route path='/login' element={<LoginPage onUpdateName={updateName} onUpdateDob={getDob}/> } />
+          <Route path='/signup' element={<Signup/>} />
+          <Route path='/birthday' element={<BirthdayPage  name={name} birthdate={birthdate}/>} />
+          <Route path='/reactBirthdayApp' element={<LoginPage/>} />  
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
